@@ -1,0 +1,11 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* Header Section */
+.title h1 {
+  color: #6d10f4;
+}
