@@ -30,7 +30,83 @@
             <div class="col-md-6 mt-0 mt-md-0 thumbnail">
               <img class="img-fluid" src="images/budget.svg" alt="" />
             </div>
-            <div class="col-md-6 mt-5 mt-md-0 clculator"></div>
+            <div class="col-md-6 mt-5 mt-md-0 clculator">
+              <!-- Monthly Income -->
+              <div class="monthly-income">
+                <h3 class="text-center">Your Income</h3>
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  name="income"
+                  id="income"
+                  placeholder="Your Monthly Income"
+                />
+              </div>
+              <!-- Monthly Expenses -->
+              <div class="monthly-expenses mt-5">
+                <h3 class="text-center">Your Expenses</h3>
+                <div class="d-flex flex-column gap-3">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    name="food"
+                    id="food"
+                    placeholder="Food"
+                  />
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    name="rent"
+                    id="rent"
+                    placeholder="Rent"
+                  />
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    name="clothes"
+                    id="clothes"
+                    placeholder="Clothes"
+                  />
+                  <!-- Calculate Button -->
+                  <button class="btn btn-lg btn-outline-primary" type="submit">
+                    Calculate
+                  </button>
+                  <div
+                    class="expense-report d-flex justify-content-between py-3"
+                  >
+                    <!-- Total Expenses -->
+                    <h3 class="text-center">
+                      Total Expenses BDT
+                      <span class="text-warning" id="total-expenses">00</span>
+                    </h3>
+                    <!-- Balance -->
+                    <h3 class="text-center">
+                      Balance BDT
+                      <span class="text-warning" id="total-expenses">00</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Money Savings -->
+              <div class="money-save">
+                <div class="input-group">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    name="save"
+                    id="save"
+                    placeholder="Savings Percentage %"
+                  />
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
