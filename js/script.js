@@ -4,7 +4,6 @@ function getValue(valueName) {
   const inputFieldValue = parseFloat(targetInputField.value);
   return inputFieldValue
 }
-
 // Total Expenses Function
 function totalExpenses(firstItem, secondItem, thirdItem) {
   const foodField = document.getElementById(firstItem);
@@ -13,7 +12,6 @@ function totalExpenses(firstItem, secondItem, thirdItem) {
   const rent = parseFloat(rentField.value);
   const clothField = document.getElementById(thirdItem);
   const cloth = parseFloat(clothField.value);
-
   const expenses = food + rent + cloth;
   return expenses;
 };
@@ -51,14 +49,11 @@ document.getElementById('calculate-budget').addEventListener('click', function (
   else {
     /* Total Expenses */
     document.getElementById('total-expenses').innerHTML = totalExpenses('food', 'rent', 'clothes');
-
     /* Balance After Expenses */
     const balanceAfterExpenses = getValue('monthly-income') - totalExpenses('food', 'rent', 'clothes');
     document.getElementById('balance-after-expenses').innerHTML = balanceAfterExpenses;
   }
-
 })
-
 
 document.getElementById('btn-savings').addEventListener('click', function () {
   const saveInput = document.getElementById('save-input');
