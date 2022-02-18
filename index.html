@@ -44,7 +44,7 @@
                   class="form-control form-control-lg"
                   type="text"
                   name="income"
-                  id="income"
+                  id="monthly-income"
                   placeholder="Your Monthly Income"
                 />
               </div>
@@ -74,7 +74,11 @@
                     placeholder="Clothes"
                   />
                   <!-- Calculate Button -->
-                  <button class="btn btn-lg btn-outline-primary" type="submit">
+                  <button
+                    id="calculate-budget"
+                    class="btn btn-lg btn-outline-primary"
+                    type="submit"
+                  >
                     Calculate
                   </button>
                   <div
@@ -88,7 +92,9 @@
                     <!-- Balance -->
                     <h5 class="text-center">
                       Balance BDT
-                      <span class="text-warning" id="total-expenses">00</span>
+                      <span class="text-warning" id="balance-after-expenses"
+                        >00</span
+                      >
                     </h5>
                   </div>
                 </div>
@@ -106,7 +112,7 @@
                   <button
                     class="btn btn-lg btn-outline-primary"
                     type="button"
-                    id="button-addon2"
+                    id="btn-savings"
                   >
                     Save
                   </button>
